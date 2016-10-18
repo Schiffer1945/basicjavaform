@@ -153,11 +153,7 @@ public class tugasFrame extends javax.swing.JFrame {
         String matpel = (String)cbMatpel.getSelectedItem();
         int nilai = Integer.parseInt(tbNilai.getText());
                 
-        if(nilai > 0)
-            JOptionPane.showMessageDialog(null, "Isian nilai anda tidak valid, yang valid 0 - 100");
-        else if(nilai < 100)
-            JOptionPane.showMessageDialog(null, "Isian nilai anda tidak valid, yang valid 0 - 100");
-        else if(nilai >= 86 && nilai <=100)
+        if(nilai >= 86 && nilai <=100)
         {
             String sempurna = "Nilai anda SEMPURNA pada " + matpel;
             textArea.append("Nama : "+ nama + "\nAbsen : "+ absen +"\nMata Pelajaran : "+ matpel +"\nNilai : "+ nilai +"\n"+ sempurna + "\n\n");
